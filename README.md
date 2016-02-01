@@ -18,3 +18,8 @@ This will build libtins and libpcap. Currently only tested on mac os, but should
 **Permission denied opening dev/bpf0**
 
 In some cases you need to gain access to read from you network card. This might manifest itself on OS X as `(cannot open BPF device) /dev/bpf0: Permission denied` (See more on issue #2). You can fix this by running the command `sudo chmod o+r /dev/bpf*`.
+
+This library will give you limited access to button presses from amazon dash buttons. To receive these button presses just follow the instructions here https://www.amazon.com/gp/help/customer/display.html?nodeId=201746340 but stop at part 4 of the isntructions (ie don't select a product to order with the dash). This setup will remember the wifi SSID and password you associated your button with. You can now disconnect from the internet if you like. Repeat for as many buttons as you like.
+
+Now you can run the example_amazon_dash, it should give an arp request result and show the mac address of the button. To identify each button and separate it from other ARP requests on your network just check the mac address of the incoming request.
+
