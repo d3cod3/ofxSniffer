@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2766821A1CF908940FF355EF /* ofxSniffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A1492614F2889A55BC93BDD /* ofxSniffer.cpp */; };
+		B60C2F7F1C28A5B900C45A72 /* libpcap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B60C2F7E1C28A5B900C45A72 /* libpcap.a */; };
+		B60C2F821C28A5E100C45A72 /* libtins.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B60C2F811C28A5E100C45A72 /* libtins.a */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05219A5C2FD3D32DB27C91B5 /* udp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = udp.h; path = ../../../addons/ofxSniffer/libs/libtins/include/udp.h; sourceTree = SOURCE_ROOT; };
+		07F912AC475CBD04FAB1D7C1 /* handshake_capturer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handshake_capturer.h; path = ../../../addons/ofxSniffer/libs/libtins/include/handshake_capturer.h; sourceTree = SOURCE_ROOT; };
+		0863142FE14CFC6E0BC7FE6C /* constants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = constants.h; path = ../../../addons/ofxSniffer/libs/libtins/include/constants.h; sourceTree = SOURCE_ROOT; };
+		092E5D5767E82FB03DFEC679 /* ethernetII.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ethernetII.h; path = ../../../addons/ofxSniffer/libs/libtins/include/ethernetII.h; sourceTree = SOURCE_ROOT; };
+		09403C235C81A7D385FBC504 /* dot11_mgmt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot11_mgmt.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot11/dot11_mgmt.h; sourceTree = SOURCE_ROOT; };
+		105A682D197E25E9E854B176 /* packet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = packet.h; path = ../../../addons/ofxSniffer/libs/libtins/include/packet.h; sourceTree = SOURCE_ROOT; };
+		14207741B6E9BD36DA941A22 /* tcp_stream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tcp_stream.h; path = ../../../addons/ofxSniffer/libs/libtins/include/tcp_stream.h; sourceTree = SOURCE_ROOT; };
+		194A0D0D4D2D3F1B5EDEEAAE /* pdu_option.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pdu_option.h; path = ../../../addons/ofxSniffer/libs/libtins/include/pdu_option.h; sourceTree = SOURCE_ROOT; };
+		1C8EAD9613A6D2E70C862BF0 /* dot11.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot11.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot11.h; sourceTree = SOURCE_ROOT; };
+		275943A05C78E1D2B91E8B63 /* timestamp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = timestamp.h; path = ../../../addons/ofxSniffer/libs/libtins/include/timestamp.h; sourceTree = SOURCE_ROOT; };
+		2A4DA6CE1BD5FCF469051C78 /* utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = utils.h; path = ../../../addons/ofxSniffer/libs/libtins/include/utils.h; sourceTree = SOURCE_ROOT; };
+		2B3E0215EBD7C6BB8FEA31FA /* small_uint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = small_uint.h; path = ../../../addons/ofxSniffer/libs/libtins/include/small_uint.h; sourceTree = SOURCE_ROOT; };
+		31006003EEB9A03E3AC4983D /* arp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = arp.h; path = ../../../addons/ofxSniffer/libs/libtins/include/arp.h; sourceTree = SOURCE_ROOT; };
+		3216713DDA51F937E4A475DC /* icmp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = icmp.h; path = ../../../addons/ofxSniffer/libs/libtins/include/icmp.h; sourceTree = SOURCE_ROOT; };
+		33487D0606F86515EDC72A9E /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = config.h; path = ../../../addons/ofxSniffer/libs/libtins/include/config.h; sourceTree = SOURCE_ROOT; };
+		37CD35F69471BCDD8871173E /* dot11_probe.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot11_probe.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot11/dot11_probe.h; sourceTree = SOURCE_ROOT; };
+		3D9209B2D48DBBB4FE58B8E1 /* packet_writer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = packet_writer.h; path = ../../../addons/ofxSniffer/libs/libtins/include/packet_writer.h; sourceTree = SOURCE_ROOT; };
+		3F9D1CEE32F498CD16FABDDF /* packet_sender.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = packet_sender.h; path = ../../../addons/ofxSniffer/libs/libtins/include/packet_sender.h; sourceTree = SOURCE_ROOT; };
+		410FE505B4FCA40338138CFC /* bootp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = bootp.h; path = ../../../addons/ofxSniffer/libs/libtins/include/bootp.h; sourceTree = SOURCE_ROOT; };
+		41DCA8B91592F4DF367F327D /* tins.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tins.h; path = ../../../addons/ofxSniffer/libs/libtins/include/tins.h; sourceTree = SOURCE_ROOT; };
+		46BE66506A0E091B04E60EE5 /* dot11_control.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot11_control.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot11/dot11_control.h; sourceTree = SOURCE_ROOT; };
+		49F8161D0502A40336AA0012 /* dot1q.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot1q.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot1q.h; sourceTree = SOURCE_ROOT; };
+		4C799A77D438171501121E72 /* ipv6.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ipv6.h; path = ../../../addons/ofxSniffer/libs/libtins/include/ipv6.h; sourceTree = SOURCE_ROOT; };
+		4C7CF0D038C6BB63608DA1FB /* pdu_cacher.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pdu_cacher.h; path = ../../../addons/ofxSniffer/libs/libtins/include/pdu_cacher.h; sourceTree = SOURCE_ROOT; };
+		50FC8480C370C996819084EC /* offline_packet_filter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = offline_packet_filter.h; path = ../../../addons/ofxSniffer/libs/libtins/include/offline_packet_filter.h; sourceTree = SOURCE_ROOT; };
+		5AC1B021A63E1B05C5CE2A8E /* ofxSniffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSniffer.h; path = ../../../addons/ofxSniffer/src/ofxSniffer.h; sourceTree = SOURCE_ROOT; };
+		5C173057011B1590FFC0494F /* tcp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tcp.h; path = ../../../addons/ofxSniffer/libs/libtins/include/tcp.h; sourceTree = SOURCE_ROOT; };
+		6165BA6FC6AA483B10CBF0F4 /* ip.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ip.h; path = ../../../addons/ofxSniffer/libs/libtins/include/ip.h; sourceTree = SOURCE_ROOT; };
+		61761FD40390FF4E0A68FB81 /* network_interface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = network_interface.h; path = ../../../addons/ofxSniffer/libs/libtins/include/network_interface.h; sourceTree = SOURCE_ROOT; };
+		63A087032437619141B28F5C /* crypto.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = crypto.h; path = ../../../addons/ofxSniffer/libs/libtins/include/crypto.h; sourceTree = SOURCE_ROOT; };
+		659123E79EBA28D3DF4E2DEE /* dns.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dns.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dns.h; sourceTree = SOURCE_ROOT; };
+		6779888BB92FA2D45F5B6026 /* llc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = llc.h; path = ../../../addons/ofxSniffer/libs/libtins/include/llc.h; sourceTree = SOURCE_ROOT; };
+		6883701AA3B858D914201AD4 /* dhcpv6.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dhcpv6.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dhcpv6.h; sourceTree = SOURCE_ROOT; };
+		6A1492614F2889A55BC93BDD /* ofxSniffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSniffer.cpp; path = ../../../addons/ofxSniffer/src/ofxSniffer.cpp; sourceTree = SOURCE_ROOT; };
+		73FC50698C27E4827834BA13 /* dot11_beacon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot11_beacon.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot11/dot11_beacon.h; sourceTree = SOURCE_ROOT; };
+		756FEF0D4E883A04B8FE4BF5 /* exceptions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = exceptions.h; path = ../../../addons/ofxSniffer/libs/libtins/include/exceptions.h; sourceTree = SOURCE_ROOT; };
+		77FB884E28E9500440ECB2AA /* internals.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = internals.h; path = ../../../addons/ofxSniffer/libs/libtins/include/internals.h; sourceTree = SOURCE_ROOT; };
+		7E70724B12E9A3F5B2C6AF6B /* radiotap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = radiotap.h; path = ../../../addons/ofxSniffer/libs/libtins/include/radiotap.h; sourceTree = SOURCE_ROOT; };
+		7F735ADDE1011EE21B8797FA /* cxxstd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cxxstd.h; path = ../../../addons/ofxSniffer/libs/libtins/include/cxxstd.h; sourceTree = SOURCE_ROOT; };
+		81E53E949E2810075D75B658 /* pppoe.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pppoe.h; path = ../../../addons/ofxSniffer/libs/libtins/include/pppoe.h; sourceTree = SOURCE_ROOT; };
+		8AB846494D58BDAA822D39AC /* data_link_type.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = data_link_type.h; path = ../../../addons/ofxSniffer/libs/libtins/include/data_link_type.h; sourceTree = SOURCE_ROOT; };
+		91B3713EA29B17E145FCCCD4 /* ppi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ppi.h; path = ../../../addons/ofxSniffer/libs/libtins/include/ppi.h; sourceTree = SOURCE_ROOT; };
+		928EE95DA7B93FBB9F82B455 /* dot11_assoc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot11_assoc.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot11/dot11_assoc.h; sourceTree = SOURCE_ROOT; };
+		9C3AF5E2C0C29047D475A08D /* endianness.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = endianness.h; path = ../../../addons/ofxSniffer/libs/libtins/include/endianness.h; sourceTree = SOURCE_ROOT; };
+		9C998FB50CD988AF447F136A /* macros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = macros.h; path = ../../../addons/ofxSniffer/libs/libtins/include/macros.h; sourceTree = SOURCE_ROOT; };
+		9EB7D41B30BE8EBAD24D4D2D /* dot11_base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot11_base.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot11/dot11_base.h; sourceTree = SOURCE_ROOT; };
+		A0BF2FAFC6F178AECB5C9726 /* ipv6_address.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ipv6_address.h; path = ../../../addons/ofxSniffer/libs/libtins/include/ipv6_address.h; sourceTree = SOURCE_ROOT; };
+		AC52B5473E7DB5EF36A2B776 /* dhcp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dhcp.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dhcp.h; sourceTree = SOURCE_ROOT; };
+		B2DEAA0B888680334E0D0CB6 /* ip_address.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ip_address.h; path = ../../../addons/ofxSniffer/libs/libtins/include/ip_address.h; sourceTree = SOURCE_ROOT; };
+		B60C2F7D1C28A55600C45A72 /* libpcap */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libpcap; path = ../../../addons/ofxSniffer/libs/libpcap; sourceTree = "<group>"; };
+		B60C2F7E1C28A5B900C45A72 /* libpcap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcap.a; path = ../../../addons/ofxSniffer/libs/libpcap/lib/osx/libpcap.a; sourceTree = "<group>"; };
+		B60C2F801C28A5D800C45A72 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../addons/ofxSniffer/libs/libtins/lib; sourceTree = "<group>"; };
+		B60C2F811C28A5E100C45A72 /* libtins.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtins.a; path = ../../../addons/ofxSniffer/libs/libtins/lib/osx/libtins.a; sourceTree = "<group>"; };
+		C0F096DB795C74C8575C0856 /* ieee802_3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ieee802_3.h; path = ../../../addons/ofxSniffer/libs/libtins/include/ieee802_3.h; sourceTree = SOURCE_ROOT; };
+		C363D84FCC5127E1C8767CD0 /* rsn_information.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rsn_information.h; path = ../../../addons/ofxSniffer/libs/libtins/include/rsn_information.h; sourceTree = SOURCE_ROOT; };
+		C821AD0C965CD8F7D57FBDB3 /* loopback.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = loopback.h; path = ../../../addons/ofxSniffer/libs/libtins/include/loopback.h; sourceTree = SOURCE_ROOT; };
+		CC93B371B5844DBB8DA582DE /* pdu_allocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pdu_allocator.h; path = ../../../addons/ofxSniffer/libs/libtins/include/pdu_allocator.h; sourceTree = SOURCE_ROOT; };
+		CF2934E3D5AF05CB748268AB /* dot3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot3.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot3.h; sourceTree = SOURCE_ROOT; };
+		D311A3E8F6D3AD99BFB01DF6 /* sniffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sniffer.h; path = ../../../addons/ofxSniffer/libs/libtins/include/sniffer.h; sourceTree = SOURCE_ROOT; };
+		D84DABE61493FDD6ACDC5641 /* sll.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sll.h; path = ../../../addons/ofxSniffer/libs/libtins/include/sll.h; sourceTree = SOURCE_ROOT; };
+		D98EFA2E60C557AD86BD1389 /* stp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stp.h; path = ../../../addons/ofxSniffer/libs/libtins/include/stp.h; sourceTree = SOURCE_ROOT; };
+		D9BEB979306F0B0350EAAD60 /* ofxSnifferPackets.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSnifferPackets.h; path = ../../../addons/ofxSniffer/src/ofxSnifferPackets.h; sourceTree = SOURCE_ROOT; };
+		DBCC5FCD6A2E2F01AB995129 /* snap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = snap.h; path = ../../../addons/ofxSniffer/libs/libtins/include/snap.h; sourceTree = SOURCE_ROOT; };
+		E0B80B8A9CF76D7E1AD76F77 /* ip_reassembler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ip_reassembler.h; path = ../../../addons/ofxSniffer/libs/libtins/include/ip_reassembler.h; sourceTree = SOURCE_ROOT; };
+		E1219F65CFF61DAA42D0F6FE /* icmpv6.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = icmpv6.h; path = ../../../addons/ofxSniffer/libs/libtins/include/icmpv6.h; sourceTree = SOURCE_ROOT; };
+		E260F72ABC90A38960C431C2 /* pdu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pdu.h; path = ../../../addons/ofxSniffer/libs/libtins/include/pdu.h; sourceTree = SOURCE_ROOT; };
+		E286EADBFF72350670D09700 /* hw_address.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = hw_address.h; path = ../../../addons/ofxSniffer/libs/libtins/include/hw_address.h; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* example_amazon_dashDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example_amazon_dashDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E63BB6FFDD4050601E728ABF /* dot11_data.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot11_data.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot11/dot11_data.h; sourceTree = SOURCE_ROOT; };
+		ED7427035E49372718BD28EF /* dot11_auth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dot11_auth.h; path = ../../../addons/ofxSniffer/libs/libtins/include/dot11/dot11_auth.h; sourceTree = SOURCE_ROOT; };
+		F26B2923DE4D63885CCDAD21 /* ipsec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ipsec.h; path = ../../../addons/ofxSniffer/libs/libtins/include/ipsec.h; sourceTree = SOURCE_ROOT; };
+		F292D91623ACC6EF3D06F73E /* rawpdu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rawpdu.h; path = ../../../addons/ofxSniffer/libs/libtins/include/rawpdu.h; sourceTree = SOURCE_ROOT; };
+		FCD8DB464A25071320814CC4 /* eapol.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = eapol.h; path = ../../../addons/ofxSniffer/libs/libtins/include/eapol.h; sourceTree = SOURCE_ROOT; };
+		FD3C0601AC044A21C5CBD234 /* address_range.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address_range.h; path = ../../../addons/ofxSniffer/libs/libtins/include/address_range.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				B60C2F7F1C28A5B900C45A72 /* libpcap.a in Frameworks */,
+				B60C2F821C28A5E100C45A72 /* libtins.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58F75D6CE4F6FBA4FFA37203 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				B60C2F7D1C28A55600C45A72 /* libpcap */,
+				5E9442C7E3AD206871D19AF3 /* libtins */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		5E9442C7E3AD206871D19AF3 /* libtins */ = {
+			isa = PBXGroup;
+			children = (
+				B60C2F801C28A5D800C45A72 /* lib */,
+				750E590A4E9CC8E704617034 /* include */,
+			);
+			name = libtins;
+			sourceTree = "<group>";
+		};
+		67140D50E4D2AEA5985A8C55 /* ofxSniffer */ = {
+			isa = PBXGroup;
+			children = (
+				F4D559637E5E86CDC2380F09 /* src */,
+				58F75D6CE4F6FBA4FFA37203 /* libs */,
+			);
+			name = ofxSniffer;
+			sourceTree = "<group>";
+		};
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		750E590A4E9CC8E704617034 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FD3C0601AC044A21C5CBD234 /* address_range.h */,
+				31006003EEB9A03E3AC4983D /* arp.h */,
+				410FE505B4FCA40338138CFC /* bootp.h */,
+				33487D0606F86515EDC72A9E /* config.h */,
+				0863142FE14CFC6E0BC7FE6C /* constants.h */,
+				63A087032437619141B28F5C /* crypto.h */,
+				7F735ADDE1011EE21B8797FA /* cxxstd.h */,
+				8AB846494D58BDAA822D39AC /* data_link_type.h */,
+				AC52B5473E7DB5EF36A2B776 /* dhcp.h */,
+				6883701AA3B858D914201AD4 /* dhcpv6.h */,
+				659123E79EBA28D3DF4E2DEE /* dns.h */,
+				9A75FF56100295D414ED1722 /* dot11 */,
+				1C8EAD9613A6D2E70C862BF0 /* dot11.h */,
+				49F8161D0502A40336AA0012 /* dot1q.h */,
+				CF2934E3D5AF05CB748268AB /* dot3.h */,
+				FCD8DB464A25071320814CC4 /* eapol.h */,
+				9C3AF5E2C0C29047D475A08D /* endianness.h */,
+				092E5D5767E82FB03DFEC679 /* ethernetII.h */,
+				756FEF0D4E883A04B8FE4BF5 /* exceptions.h */,
+				07F912AC475CBD04FAB1D7C1 /* handshake_capturer.h */,
+				E286EADBFF72350670D09700 /* hw_address.h */,
+				3216713DDA51F937E4A475DC /* icmp.h */,
+				E1219F65CFF61DAA42D0F6FE /* icmpv6.h */,
+				C0F096DB795C74C8575C0856 /* ieee802_3.h */,
+				77FB884E28E9500440ECB2AA /* internals.h */,
+				6165BA6FC6AA483B10CBF0F4 /* ip.h */,
+				B2DEAA0B888680334E0D0CB6 /* ip_address.h */,
+				E0B80B8A9CF76D7E1AD76F77 /* ip_reassembler.h */,
+				F26B2923DE4D63885CCDAD21 /* ipsec.h */,
+				4C799A77D438171501121E72 /* ipv6.h */,
+				A0BF2FAFC6F178AECB5C9726 /* ipv6_address.h */,
+				6779888BB92FA2D45F5B6026 /* llc.h */,
+				C821AD0C965CD8F7D57FBDB3 /* loopback.h */,
+				9C998FB50CD988AF447F136A /* macros.h */,
+				61761FD40390FF4E0A68FB81 /* network_interface.h */,
+				50FC8480C370C996819084EC /* offline_packet_filter.h */,
+				105A682D197E25E9E854B176 /* packet.h */,
+				3F9D1CEE32F498CD16FABDDF /* packet_sender.h */,
+				3D9209B2D48DBBB4FE58B8E1 /* packet_writer.h */,
+				E260F72ABC90A38960C431C2 /* pdu.h */,
+				CC93B371B5844DBB8DA582DE /* pdu_allocator.h */,
+				4C7CF0D038C6BB63608DA1FB /* pdu_cacher.h */,
+				194A0D0D4D2D3F1B5EDEEAAE /* pdu_option.h */,
+				91B3713EA29B17E145FCCCD4 /* ppi.h */,
+				81E53E949E2810075D75B658 /* pppoe.h */,
+				7E70724B12E9A3F5B2C6AF6B /* radiotap.h */,
+				F292D91623ACC6EF3D06F73E /* rawpdu.h */,
+				C363D84FCC5127E1C8767CD0 /* rsn_information.h */,
+				D84DABE61493FDD6ACDC5641 /* sll.h */,
+				2B3E0215EBD7C6BB8FEA31FA /* small_uint.h */,
+				DBCC5FCD6A2E2F01AB995129 /* snap.h */,
+				D311A3E8F6D3AD99BFB01DF6 /* sniffer.h */,
+				D98EFA2E60C557AD86BD1389 /* stp.h */,
+				5C173057011B1590FFC0494F /* tcp.h */,
+				14207741B6E9BD36DA941A22 /* tcp_stream.h */,
+				275943A05C78E1D2B91E8B63 /* timestamp.h */,
+				41DCA8B91592F4DF367F327D /* tins.h */,
+				05219A5C2FD3D32DB27C91B5 /* udp.h */,
+				2A4DA6CE1BD5FCF469051C78 /* utils.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		9A75FF56100295D414ED1722 /* dot11 */ = {
+			isa = PBXGroup;
+			children = (
+				928EE95DA7B93FBB9F82B455 /* dot11_assoc.h */,
+				ED7427035E49372718BD28EF /* dot11_auth.h */,
+				9EB7D41B30BE8EBAD24D4D2D /* dot11_base.h */,
+				73FC50698C27E4827834BA13 /* dot11_beacon.h */,
+				46BE66506A0E091B04E60EE5 /* dot11_control.h */,
+				E63BB6FFDD4050601E728ABF /* dot11_data.h */,
+				09403C235C81A7D385FBC504 /* dot11_mgmt.h */,
+				37CD35F69471BCDD8871173E /* dot11_probe.h */,
+			);
+			name = dot11;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				67140D50E4D2AEA5985A8C55 /* ofxSniffer */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				B60C2F811C28A5E100C45A72 /* libtins.a */,
+				B60C2F7E1C28A5B900C45A72 /* libpcap.a */,
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* example_amazon_dashDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		F4D559637E5E86CDC2380F09 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6A1492614F2889A55BC93BDD /* ofxSniffer.cpp */,
+				5AC1B021A63E1B05C5CE2A8E /* ofxSniffer.h */,
+				D9BEB979306F0B0350EAAD60 /* ofxSnifferPackets.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* example_amazon_dash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example_amazon_dash" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+				8466F1851C04CA0E00918B1C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = example_amazon_dash;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* example_amazon_dashDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example_amazon_dash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* example_amazon_dash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8466F1851C04CA0E00918B1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# ---- Code Sign App Package ----\n \n# WARNING: You may have to run Clean in Xcode after changing CODE_SIGN_IDENTITY!\n\n# Verify that $CODE_SIGN_IDENTITY is set\nif [ -z \"${CODE_SIGN_IDENTITY}\" ] ; then\necho \"CODE_SIGN_IDENTITY needs to be set for framework code-signing\"\nexit 0\nfi\n\nif [ -z \"${CODE_SIGN_ENTITLEMENTS}\" ] ; then\necho \"CODE_SIGN_ENTITLEMENTS needs to be set for framework code-signing!\"\n\nif [ \"${CONFIGURATION}\" = \"Release\" ] ; then\nexit 1\nelse\n# Code-signing is optional for non-release builds.\nexit 0\nfi\nfi\n\nITEMS=\"\"\n\nFRAMEWORKS_DIR=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\necho \"$FRAMEWORKS_DIR\"\nif [ -d \"$FRAMEWORKS_DIR\" ] ; then\nFRAMEWORKS=$(find \"${FRAMEWORKS_DIR}\" -depth -type d -name \"*.framework\" -or -name \"*.dylib\" -or -name \"*.bundle\" | sed -e \"s/\\(.*framework\\)/\\1\\/Versions\\/A\\//\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${FRAMEWORKS}\"\nfi\n\nLOGINITEMS_DIR=\"${TARGET_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Library/LoginItems/\"\nif [ -d \"$LOGINITEMS_DIR\" ] ; then\nLOGINITEMS=$(find \"${LOGINITEMS_DIR}\" -depth -type d -name \"*.app\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${ITEMS}\"$'\\n'\"${LOGINITEMS}\"\nfi\n\n# Prefer the expanded name, if available.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\nif [ \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" = \"\" ] ; then\n# Fall back to old behavior.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${CODE_SIGN_IDENTITY}\"\nfi\n\necho \"Identity:\"\necho \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\"\n\necho \"Entitlements:\"\necho \"${CODE_SIGN_ENTITLEMENTS}\"\n\necho \"Found:\"\necho \"${ITEMS}\"\n\n# Change the Internal Field Separator (IFS) so that spaces in paths will not cause problems below.\nSAVED_IFS=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\n# Loop through all items.\nfor ITEM in $ITEMS;\ndo\necho \"Signing '${ITEM}'\"\ncodesign --force --verbose --sign \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" --entitlements \"${CODE_SIGN_ENTITLEMENTS}\" \"${ITEM}\"\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\necho \"Failed to sign '${ITEM}'.\"\nIFS=$SAVED_IFS\nexit 1\nfi\ndone\n\n# Restore $IFS.\nIFS=$SAVED_IFS\n";
+		};
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy bin/data into App/Resources\nrsync -avz --exclude='.DS_Store' \"${SRCROOT}/bin/data/\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/data/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				2766821A1CF908940FF355EF /* ofxSniffer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxSniffer/libs,
+					../../../addons/ofxSniffer/libs/libpcap,
+					../../../addons/ofxSniffer/libs/libpcap/lib,
+					../../../addons/ofxSniffer/libs/libpcap/lib/osx,
+					../../../addons/ofxSniffer/libs/libtins,
+					../../../addons/ofxSniffer/libs/libtins/include,
+					../../../addons/ofxSniffer/libs/libtins/include/dot11,
+					../../../addons/ofxSniffer/libs/libtins/include/libtins,
+					../../../addons/ofxSniffer/libs/libtins/lib,
+					../../../addons/ofxSniffer/libs/libtins/lib/osx,
+					../../../addons/ofxSniffer/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxSniffer/libs/libpcap/lib/osx/libpcap.a,
+					../../../addons/ofxSniffer/libs/libtins/lib/osx/libtins.a,
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxSniffer/libs,
+					../../../addons/ofxSniffer/libs/libpcap,
+					../../../addons/ofxSniffer/libs/libpcap/lib,
+					../../../addons/ofxSniffer/libs/libpcap/lib/osx,
+					../../../addons/ofxSniffer/libs/libtins,
+					../../../addons/ofxSniffer/libs/libtins/include,
+					../../../addons/ofxSniffer/libs/libtins/include/dot11,
+					../../../addons/ofxSniffer/libs/libtins/include/libtins,
+					../../../addons/ofxSniffer/libs/libtins/lib,
+					../../../addons/ofxSniffer/libs/libtins/lib/osx,
+					../../../addons/ofxSniffer/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxSniffer/libs/libpcap/lib/osx/libpcap.a,
+					../../../addons/ofxSniffer/libs/libtins/lib/osx/libtins.a,
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxSniffer/libs,
+					../../../addons/ofxSniffer/libs/libpcap,
+					../../../addons/ofxSniffer/libs/libpcap/lib,
+					../../../addons/ofxSniffer/libs/libpcap/lib/osx,
+					../../../addons/ofxSniffer/libs/libtins,
+					../../../addons/ofxSniffer/libs/libtins/include,
+					../../../addons/ofxSniffer/libs/libtins/include/dot11,
+					../../../addons/ofxSniffer/libs/libtins/include/libtins,
+					../../../addons/ofxSniffer/libs/libtins/lib,
+					../../../addons/ofxSniffer/libs/libtins/lib/osx,
+					../../../addons/ofxSniffer/src,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Fred/Dropbox/Code/OF_0.90_RC2/openFrameworks/addons/ofxSniffer/libs/libpcap/lib/osx,
+					/Users/Fred/Dropbox/Code/OF_0.90_RC2/openFrameworks/addons/ofxSniffer/libs/libtins/lib/osx,
+					/Users/Fred/Dropbox/Code/openFrameworks/addons/ofxLibtins/libs/libpcap/lib/osx,
+					/Users/Fred/Dropbox/Code/openFrameworks/addons/ofxLibtins/libs/libtins/lib/osx,
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxSniffer/libs/libpcap/lib/osx/libpcap.a,
+					../../../addons/ofxSniffer/libs/libtins/lib/osx/libtins.a,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				USER_HEADER_SEARCH_PATHS = ../../../../../openFrameworks/addons/ofxLibtins/libs/libtins/include/;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxSniffer/libs,
+					../../../addons/ofxSniffer/libs/libpcap,
+					../../../addons/ofxSniffer/libs/libpcap/lib,
+					../../../addons/ofxSniffer/libs/libpcap/lib/osx,
+					../../../addons/ofxSniffer/libs/libtins,
+					../../../addons/ofxSniffer/libs/libtins/include,
+					../../../addons/ofxSniffer/libs/libtins/include/dot11,
+					../../../addons/ofxSniffer/libs/libtins/include/libtins,
+					../../../addons/ofxSniffer/libs/libtins/lib,
+					../../../addons/ofxSniffer/libs/libtins/lib/osx,
+					../../../addons/ofxSniffer/src,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Fred/Dropbox/Code/OF_0.90_RC2/openFrameworks/addons/ofxSniffer/libs/libpcap/lib/osx,
+					/Users/Fred/Dropbox/Code/OF_0.90_RC2/openFrameworks/addons/ofxSniffer/libs/libtins/lib/osx,
+					/Users/Fred/Dropbox/Code/openFrameworks/addons/ofxLibtins/libs/libpcap/lib/osx,
+					/Users/Fred/Dropbox/Code/openFrameworks/addons/ofxLibtins/libs/libtins/lib/osx,
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxSniffer/libs/libpcap/lib/osx/libpcap.a,
+					../../../addons/ofxSniffer/libs/libtins/lib/osx/libtins.a,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = ../../../../../openFrameworks/addons/ofxLibtins/libs/libtins/include/;
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example_amazon_dash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example_amazon_dash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
