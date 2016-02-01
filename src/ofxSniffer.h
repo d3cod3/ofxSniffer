@@ -25,7 +25,7 @@ public:
      Start sniffing on a background thread
      @param interface The name of the the network interface to sniff on
      */
-    void startSniffing(string interface="en0", bool monitorMode = false);
+    void startSniffing(string interface="en0", bool monitorMode = true);
 
     /*!
      Iterate through packet types and return a string containing all of them.
@@ -58,6 +58,12 @@ public:
      */
     ofEvent<ofxSnifferProbeRequestFrame> probeRequestFrameEvent;
     
+    /*!
+     Event emitted every time an ARP frame is detected.
+     This event is emitted on the main thread.
+     */
+    ofEvent<ofxSnifferARPRequestFrame> ARPRequestFrameEvent;
+    
 private:
     void threadedFunction();
     void update(ofEventArgs &);
@@ -66,4 +72,6 @@ private:
     ofThreadChannel<ofxSnifferHttpPacket> httpPackets;
     ofThreadChannel<ofxSnifferBeaconFrame> beaconFrames;
     ofThreadChannel<ofxSnifferProbeRequestFrame> probeRequestFrames;
+    ofThreadChannel<ofxSnifferARPRequestFrame> ARPRequestFrame;
+   
 };

@@ -18,11 +18,12 @@ ofxSniff::~ofxSniff(){
 
 void ofxSniff::startSniffing(string _interface, bool monitorMode){
     interface = _interface;
-
+    
     // Sniffer configuration
     SnifferConfiguration config;
     config.set_promisc_mode(true);
     config.set_rfmon(monitorMode);
+   // config.set_filter("arp");
     
     // Create the sniffer instance
     try {
@@ -49,6 +50,12 @@ void ofxSniff::update(ofEventArgs & args){
     ofxSnifferProbeRequestFrame probeRequest;
     while(probeRequestFrames.tryReceive(probeRequest)){
         ofNotifyEvent(probeRequestFrameEvent, probeRequest, this);
+    }
+    
+    ofxSnifferARPRequestFrame ARPRequest;
+    while(ARPRequestFrame.tryReceive(ARPRequest)){
+        ofNotifyEvent(ARPRequestFrameEvent, ARPRequest, this);
+        
     }
 }
 
@@ -197,7 +204,7 @@ void ofxSniff::threadedFunction() {
         try {
             Packet packet = sniffer->next_packet();
             if(packet) {
-                newRawPacketEvent.notifyAsync(this, packet);
+                newRawPacketEvent.notify(this, packet);
                 
 //                cout << packet.pdu()->size() << endl;
 //                cout << "packet: " << toString(packet) << endl;
@@ -216,6 +223,11 @@ void ofxSniff::threadedFunction() {
                 ofxSnifferProbeRequestFrame probeRequest = ofxSnifferProbeRequestFrame(packet);
                 if(probeRequest.isValid) {
                     probeRequestFrames.send(probeRequest);
+                }
+                
+                ofxSnifferARPRequestFrame ARPRequest = ofxSnifferARPRequestFrame(packet);
+                if(ARPRequest.isValid) {
+                    ARPRequestFrame.send(ARPRequest);
                 }
             }
         } catch(...) {

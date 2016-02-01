@@ -3,6 +3,9 @@
 #include "tins.h"
 #include "ofUtils.h"
 
+#include <time.h>
+#include <stdio.h>
+
 using namespace Tins;
 
 template <class T>
@@ -23,6 +26,40 @@ HWAddress<6> get_dst_addr(const T& data) {
     return data.addr1();
 }
 
+template <class T>
+HWAddress<6> get_sndr_addr_ARP(const T& data) {
+ 
+    return data.sender_hw_addr();
+}
+
+class ofxSnifferARPRequestFrame {
+public:
+    bool isValid = false;
+    char flag;
+    HWAddress<6> addr;
+    string packetTimeStamp;
+    Timestamp timestamp;
+    ofxSnifferARPRequestFrame() {}
+    
+    ofxSnifferARPRequestFrame(Packet packet) {
+        try {
+            packet.pdu()->rfind_pdu<Tins::ARP>();
+            const Tins::ARP &data = packet.pdu()->rfind_pdu<Tins::ARP>();
+            
+            addr = get_sndr_addr_ARP(data);
+            timestamp= packet.timestamp();
+            isValid = true;
+            time_t tiit;
+            tiit = timestamp.seconds();
+            struct tm * ptm = localtime(&tiit);
+            char buf[30];
+            strftime(buf, 30, "%a, %d %b %Y %H:%M:%S",  ptm);
+            packetTimeStamp=buf;
+        } catch (...) {
+        }
+    }
+};
+
 class ofxSnifferProbeRequestFrame {
 public:
     bool isValid = false;
@@ -39,6 +76,9 @@ public:
             ssid = data.ssid();
             addr = get_src_addr(data);
             isValid = true;
+            
+            
+
         } catch (...) {
         }
     }

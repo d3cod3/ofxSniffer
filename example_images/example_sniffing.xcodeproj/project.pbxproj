@@ -684,6 +684,7 @@
 					../../../addons/ofxSniffer/libs/libpcap/lib/osx,
 					../../../addons/ofxSniffer/libs/libtins/lib/osx,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				USER_HEADER_SEARCH_PATHS = ../libs/libtins/include/;
 				WRAPPER_EXTENSION = app;
@@ -711,6 +712,7 @@
 					../../../addons/ofxSniffer/libs/libpcap/lib/osx,
 					../../../addons/ofxSniffer/libs/libtins/lib/osx,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = ../libs/libtins/include/;
 				WRAPPER_EXTENSION = app;
