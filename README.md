@@ -23,7 +23,7 @@ In some cases you need to gain access to read from you network card. This might 
 
 This library will give you limited access to button presses from amazon dash buttons (limited as all it does is listen for the ARP request when you press the button and it turns on- still usefull and quite cheap for a long life battery powered wifi button for a more detailed and complicated hack see here http://hackaday.com/2015/08/12/amazon-dash-hack-it-to-run-your-own-code/). 
 
-To receive these button presses just follow the instructions here https://www.amazon.com/gp/help/customer/display.html?nodeId=201746340 but stop at part 4 of the isntructions (ie don't select a product to order with the dash). This setup will remember the wifi SSID and password you associated your button with. You can now disconnect from the internet if you like. Repeat for as many buttons as you like.
+To receive these button presses just follow the instructions here https://www.amazon.com/gp/help/customer/display.html?nodeId=201746340 but stop at part 4 of the isntructions (ie don't select a product to order with the dash). This setup will remember the wifi SSID and password you associated your button with. Repeat for as many buttons as you like. Once the buttons are associated with your network you can disconnect from the internet if you like.
 
-Now you can run the example_amazon_dash, it should give an arp request result and show the mac address of the button. To identify each button and separate it from other ARP requests on your network just check the mac address of the incoming request.
+Now you can run the example_amazon_dash, when you press the button it should give an arp request result and show the mac address of the button (it will also give a timestamp of the button press). To identify each button and separate it from other ARP requests on your network just check the mac address of the incoming request.
 
